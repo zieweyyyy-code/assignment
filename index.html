@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<!-- saved from url=(0108)file:///C:/Users/profe/.cursor/projects/empty-window/AI%E7%AB%9E%E5%93%81%E8%B0%83%E7%A0%94%E4%B8%8EPRD.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion / Goodnotes 竞品研究报告 · 邀请解锁 Pro PRD</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --secondary: #6e6e73;
+      --border: #d2d2d7;
+      --surface: #f5f5f7;
+      --link: #0066cc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro SC", "PingFang SC", "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page { max-width: 980px; margin: 0 auto; padding: 48px 24px 96px; }
+    .hero {
+      text-align: center;
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h1 {
+      font-size: 40px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .hero .subtitle { font-size: 19px; color: var(--secondary); max-width: 560px; margin: 0 auto; }
+    .hero .meta { margin-top: 18px; font-size: 14px; color: var(--secondary); }
+
+    nav.toc {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin: 40px 0 0;
+    }
+    nav.toc .toc-part { margin-bottom: 20px; }
+    nav.toc .toc-part:last-child { margin-bottom: 0; }
+    nav.toc h2 {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--secondary);
+      margin-bottom: 10px;
+    }
+    nav.toc ol { padding-left: 20px; font-size: 15px; }
+    nav.toc li { margin: 5px 0; }
+    nav.toc a { color: var(--link); text-decoration: none; }
+    nav.toc a:hover { text-decoration: underline; }
+
+    /* —— 两大板块分界 —— */
+    .part-boundary {
+      margin: 72px 0 48px;
+      padding: 48px 0 0;
+      border-top: 2px solid #1d1d1f;
+      text-align: center;
+    }
+    .part-boundary .part-num {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--secondary);
+      margin-bottom: 8px;
+    }
+    .part-boundary h2 {
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .part-boundary .part-desc {
+      margin-top: 10px;
+      font-size: 15px;
+      color: var(--secondary);
+    }
+
+    .major-part { padding-bottom: 16px; }
+    section.block { margin-bottom: 52px; }
+    h2.section-title {
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 { font-size: 20px; font-weight: 600; margin: 28px 0 10px; }
+    h4 { font-size: 17px; font-weight: 600; margin: 22px 0 8px; }
+    p { margin-bottom: 14px; }
+    ul, ol { margin: 0 0 14px 24px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--link); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      margin: 18px 0 24px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--border);
+      padding: 11px 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--secondary);
+      background: var(--surface);
+    }
+    tr:first-child th { border-top: 1px solid var(--border); }
+
+    .product-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 26px 30px;
+      margin: 20px 0;
+    }
+    .product-card h3 { margin-top: 0; font-size: 18px; }
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 14px;
+      margin: 18px 0 8px;
+    }
+    .kpi {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      text-align: center;
+    }
+    .kpi .num { font-size: 22px; font-weight: 600; display: block; }
+    .kpi .lbl { font-size: 11px; color: var(--secondary); margin-top: 4px; }
+    .footnote { font-size: 13px; color: var(--secondary); }
+
+    .dim-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: #e8e8ed;
+      color: var(--secondary);
+      margin-right: 6px;
+    }
+    .func-item {
+      border-left: 3px solid var(--border);
+      padding: 0 0 18px 18px;
+      margin-bottom: 18px;
+    }
+    .func-item h4 { margin-top: 0; }
+    .insight {
+      background: var(--surface);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 14px 0;
+    }
+    .insight h4 { margin-top: 0; font-size: 14px; font-weight: 600; }
+    .insight-user { border-left: 3px solid #aeaeb2; }
+    .insight-biz { border-left: 3px solid #1d1d1f; }
+
+    .flow-block {
+      background: var(--surface);
+      border-radius: 10px;
+      padding: 22px 26px;
+      font-size: 14px;
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      margin: 14px 0 22px;
+      overflow-x: auto;
+    }
+    .step-table td:first-child { width: 68px; font-weight: 600; color: var(--secondary); }
+    .state { font-size: 13px; color: var(--secondary); }
+
+    .doc-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 10px;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .doc-meta div { padding: 11px 14px; background: var(--surface); border-radius: 8px; }
+    .doc-meta strong { display: block; font-size: 11px; color: var(--secondary); margin-bottom: 3px; font-weight: 600; }
+
+    footer {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 13px;
+      color: var(--secondary);
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 30px; }
+      .part-boundary h2 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1>Notion / Goodnotes<br>竞品研究与产品需求文档</h1>
+      <p class="subtitle">App Store · AI 笔记品类 · Goodnotes 增长功能方案</p>
+      <p class="meta">文档编号 GN-CR-2026-01 &nbsp;|&nbsp; 版本 v1.1 &nbsp;|&nbsp; 2026-05-20</p>
+    </header>
+
+    <nav class="toc">
+      <div class="toc-part">
+        <h2>第一部分 · 竞品调研报告</h2>
+        <ol>
+          <li><a href="file:///C:/Users/profe/.cursor/projects/empty-window/AI%E7%AB%9E%E5%93%81%E8%B0%83%E7%A0%94%E4%B8%8EPRD.html#p1-bg">1. 研究背景</a></li>
+          <li><a href="file:///C:/Users/profe/.cursor/projects/empty-window/AI%E7%AB%9E%E5%93%81%E8%B0%83%E7%A0%94%E4%B8%8EPRD.html#p1-notion">2. Notion 分析</a></li>
+          <li><a href="file:///C:/Users/profe/.cursor/projects/empty-window/AI%E7%AB%9E%E5%93%81%E8%B0%83%E7%A0%94%E4%B8%8EPRD.html#p1-goodnotes">3. Goodnotes 6 分析</a></li>
+          <li><a href="file:///C:/Users/profe/.cursor/projects/empty-window/AI%E7%AB%9E%E5%93%81%E8%B0%83%E7%A0%94%E4%B8%8EPRD.html#p1-compare">4. 对比评估</a></li>
+          <li><a href="file:///C:/Users/profe/.cursor/projects/empty-window/AI%E7%AB%9E%E5%93%81%E8%B0%83%E7%A0%94%E4%B8%8EPRD.html#p1-conclusion">5. 研究结论</a></li>
+        </ol>
+      </div>
+      <div class="toc-part">
+        <h2>第二部分 · 产品需求文档（PRD）</h2>
+        <ol>
+          <li><a href="file:///C:/Users/profe/.cursor/projects/empty-window/AI%E7%AB%9E%E5%93%81%E8%B0%83%E7%A0%94%E4%B8%8EPRD.html#p2-req">1. 需求分析</a></li>
+          <li><a href="file:///C:/Users/profe/.cursor/projects/empty-window/AI%E7%AB%9E%E5%93%81%E8%B0%83%E7%A0%94%E4%B8%8EPRD.html#p2-overview">2. 产品概述</a></li>
+          <li><a href="file:///C:/Users/profe/.cursor/projects/empty-window/AI%E7%AB%9E%E5%93%81%E8%B0%83%E7%A0%94%E4%B8%8EPRD.html#p2-detail">3. 功能详细说明</a></li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!--                    第一部分 · 竞品调研                      -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <div class="part-boundary" id="part-one">
+      <p class="part-num">PART I</p>
+      <h2>竞品调研报告</h2>
+      <p class="part-desc">研究对象：Notion、Goodnotes 6（App Store · 生产力 / AI 笔记）</p>
+    </div>
+
+    <div class="major-part">
+      <section class="block" id="p1-bg">
+        <h2 class="section-title">1. 研究背景</h2>
+        <p>本报告对 App Store 两款 AI 笔记代表产品进行对标研究，分析维度覆盖<strong>行业环境、市场站位、功能与商业化、核心运营指标</strong>；输出重点为<strong>核心功能、定价策略、产品短板与改进方向</strong>。</p>
+        <p>Notion 与 Goodnotes 同属「笔记 + AI」赛道，产品形态差异显著：前者为团队知识工作区（Collaborative Workspace），后者为 Apple 生态数字纸（Digital Ink + Capture）。直接替代性有限，在<strong>会议记录、学习笔记、AI 摘要</strong>场景存在用户重叠。2025 年以来，两家均将 AI 能力纳入订阅体系重构，定价策略成为竞争与增长的关键变量。</p>
+      </section>
+
+      <section class="block" id="p1-notion">
+        <h2 class="section-title">2. Notion 分析</h2>
+        <div class="product-card">
+          <h3>2.1 产品定位</h3>
+          <p><strong>All-in-one AI Workspace。</strong>以块编辑器（Block Editor）与关系型数据库（Linked Database）为内核，整合文档、任务、维基与 AI Agent，定位团队级「默认工作界面」，而非消费级手写笔记工具。</p>
+          <div class="kpi-row">
+            <div class="kpi"><span class="num">1 亿+</span><span class="lbl">注册用户</span></div>
+            <div class="kpi"><span class="num">$5 亿+</span><span class="lbl">年化收入（2025）</span></div>
+            <div class="kpi"><span class="num">400 万+</span><span class="lbl">付费客户</span></div>
+            <div class="kpi"><span class="num">50%+</span><span class="lbl">Fortune 500 渗透率</span></div>
+          </div>
+          <p class="footnote">数据来源：CNBC、Notion 官方及公开融资披露。</p>
+        </div>
+
+        <h3>2.2 目标用户与主营场景</h3>
+        <table>
+          <thead><tr><th>维度</th><th>内容</th></tr></thead>
+          <tbody>
+            <tr><td>目标用户</td><td>知识工作者、产品/运营、创业团队、企业职能部门</td></tr>
+            <tr><td>主营场景</td><td>项目与 OKR 管理、会议知识库、对外文档 / Help Center、跨团队信息归档</td></tr>
+            <tr><td>设备与入口</td><td>Web / 桌面端为主；移动端承担查阅与轻编辑</td></tr>
+            <tr><td>采购决策</td><td>团队 Admin / IT；按席位（Per-seat）采购</td></tr>
+          </tbody>
+        </table>
+
+        <h3>2.3 功能模块设计</h3>
+        <div class="func-item">
+          <h4><span class="dim-tag">内容建模</span>块编辑器与数据库</h4>
+          <p>Block 为最小编辑单元；单页可挂载 Table、Board、Calendar、Timeline 等视图，支撑可查询的结构化知识管理（PKM at scale）。适用于项目台账、内容排期、CRM 轻量场景。模板生态与数据迁移成本构成用户锁定（Switching Cost）。</p>
+        </div>
+        <div class="func-item">
+          <h4><span class="dim-tag">AI 层</span>Meeting Notes · Custom Agent</h4>
+          <p>会议链路：日历 / 录音接入 → 自动纪要 → 与人工笔记合并为可发布页。Agent 支持跨 Workspace 检索与任务执行（2025 战略重点）。能力边界对标企业知识检索（Copilot、Glean），而非笔迹识别引擎。</p>
+        </div>
+        <div class="func-item">
+          <h4><span class="dim-tag">协作</span>权限 · 评论 · 发布</h4>
+          <p>页面级 / 行级权限、@提及、版本历史、公开 Web 发布。异步协作与对外知识库成熟；实时共编弱于 Google Docs，强于结构化协同与权限治理。</p>
+        </div>
+        <div class="func-item">
+          <h4><span class="dim-tag">跨端</span>全平台</h4>
+          <p>不绑定特定硬件；手写为辅助能力。桌面办公场景占优，iPad 手写体验弱于专用 Ink 应用。</p>
+        </div>
+
+        <h3>2.4 定价与收益</h3>
+        <table>
+          <thead><tr><th>档位</th><th>价格（参考）</th><th>权益要点</th></tr></thead>
+          <tbody>
+            <tr><td>Free</td><td>$0</td><td>个人无限块；团队协作受限</td></tr>
+            <tr><td>Plus</td><td>约 $10–12 / 人 / 月</td><td>扩展协作与存储；<strong>新用户不含完整 AI</strong></td></tr>
+            <tr><td>Business</td><td>约 $20 / 人 / 月</td><td>含 Notion AI； SAML SSO 等</td></tr>
+            <tr><td>Enterprise</td><td>议价</td><td>审计、专属支持、合规条款</td></tr>
+          </tbody>
+        </table>
+        <p>2025 年 5 月起，AI 不再作为 Plus 附加包单独售卖，新购 AI 能力捆绑 Business 及以上，驱动 ARPU 上移。公开信息显示，2025 年底 AI 相关客户贡献超过 50% ARR。增长路径：模板社区获客 → 团队席位扩展 → Business 升级。</p>
+
+        <h3>2.5 核心指标</h3>
+        <table>
+          <thead><tr><th>指标</th><th>数值</th><th>备注</th></tr></thead>
+          <tbody>
+            <tr><td>App Store 评分</td><td>约 4.7</td><td>差评集中于同步延迟、移动端性能</td></tr>
+            <tr><td>免费 → 付费转化</td><td>约 13%</td><td>第三方估算；高于工具类均值</td></tr>
+            <tr><td>多人协作收入占比</td><td>约 90%</td><td>B 端与团队场景为收入基本盘</td></tr>
+            <tr><td>估值</td><td>约 $110 亿</td><td>2025 私募口径</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="block" id="p1-goodnotes">
+        <h2 class="section-title">3. Goodnotes 6 分析</h2>
+        <div class="product-card">
+          <h3>3.1 产品定位</h3>
+          <p><strong>Apple 生态数字纸 + AI 学习 / 会议工作台。</strong>以低延迟 Ink 渲染、PDF 矢量批注、白板协作为基础层，叠加 AI Audio 转写、Study Sets 与文档 AI，形成 Capture → Understand → Output 闭环。2022 年度 iPad App；FY2025 公司收入约 £1.04 亿（3 年 CAGR 约 69%）。</p>
+          <div class="kpi-row">
+            <div class="kpi"><span class="num">2500 万+</span><span class="lbl">月活</span></div>
+            <div class="kpi"><span class="num">4.7</span><span class="lbl">App Store 评分</span></div>
+            <div class="kpi"><span class="num">42 万+</span><span class="lbl">评分量</span></div>
+            <div class="kpi"><span class="num">7.0.x</span><span class="lbl">当前主版本</span></div>
+          </div>
+          <p class="footnote">MAU：Press Kit；财务：英国公司年报；评分：App Store 美区。</p>
+        </div>
+
+        <h3>3.2 目标用户与主营场景</h3>
+        <table>
+          <thead><tr><th>维度</th><th>内容</th></tr></thead>
+          <tbody>
+            <tr><td>目标用户</td><td>高校生、研究生、教师；咨询 / 医疗 / 设计等重度 iPad 专业人士</td></tr>
+            <tr><td>主营场景</td><td>课堂笔记、PDF / 讲义批注、白板研讨、考前复习（Study Sets）、AirPlay 演示</td></tr>
+            <tr><td>设备与入口</td><td>iPad + Apple Pencil 为主；iPhone / Mac 为同步延伸</td></tr>
+            <tr><td>采购决策</td><td>个人订阅；价格敏感度高（学生季明显）</td></tr>
+          </tbody>
+        </table>
+
+        <h3>3.3 功能模块设计</h3>
+        <div class="func-item">
+          <h4><span class="dim-tag">输入捕获</span>Ink · PDF · 导入</h4>
+          <p>压感笔迹、形状识别、套索变换；PDF TOC 解析、批注层与母版分离；邮件转发与 Dropbox / Drive / OneDrive / iCloud 同步。核心 KPI 为笔迹延迟（Ink Latency）与橡皮响应，服务合同批注、讲义勾画等纸质工作流迁移。</p>
+        </div>
+        <div class="func-item">
+          <h4><span class="dim-tag">硬件协同</span>Pencil · 外接显示</h4>
+          <p>Pencil 双击工具切换、Scribble 转录；AirPlay / HDMI 激光笔演示（Laser Pointer）。与 iPadOS 深度集成，构成 Android / Web 难以完整复刻的体验壁垒，影响高校、临床等场景的硬件选型。</p>
+        </div>
+        <div class="func-item">
+          <h4><span class="dim-tag">AI 层</span>AI Audio · 文档 AI · 白板 AI</h4>
+          <p><strong>AI Audio：</strong>录音与笔迹时间轴对齐（Time-aligned Transcription），实时摘要，会后合并可分享纪要。<strong>文档 AI：</strong>润色、缩写、语气调整。<strong>白板 AI：</strong>研讨后要点抽取。三层能力分属不同 SKU，是 ARPU 提升主战场，亦带来权益解释成本。</p>
+        </div>
+        <div class="func-item">
+          <h4><span class="dim-tag">学习巩固</span>Study Sets</h4>
+          <p>由笔记生成闪卡，调度算法基于 Active Recall 与 Spaced Repetition。将工具使用延伸至学习成效（Learning Outcome），关联考试季留存与自然推荐（NPS / 口碑）。</p>
+        </div>
+        <div class="func-item">
+          <h4><span class="dim-tag">协作</span>链接分享 · 实时白板</h4>
+          <p>笔记本链接共编、白板实时协作（7.x）。权限模型轻量，适配小组作业；企业级 SSO、审计日志非强项，市场重心在 C 端与小团队。</p>
+        </div>
+
+        <h3>3.4 定价与收益</h3>
+        <table>
+          <thead><tr><th>SKU（App Store）</th><th>价格（参考）</th><th>权益要点</th></tr></thead>
+          <tbody>
+            <tr><td>免费试用</td><td>$0</td><td>限时体验</td></tr>
+            <tr><td>Essential</td><td>约 $11.99 / 年</td><td>基础笔记；AI 能力受限</td></tr>
+            <tr><td>Pro</td><td>约 $35.99 / 年</td><td>高级协作、完整功能集</td></tr>
+            <tr><td>AI Pass</td><td>约 $9.99 / 月</td><td>AI 额度增购，可与订阅叠加</td></tr>
+            <tr><td>Marketplace</td><td>$1.99–$9.99</td><td>模板 / 素材，拉长 LTV</td></tr>
+          </tbody>
+        </table>
+        <p>收入结构 100% IAP，无广告。策略为低价 Essential 获客 → Pro / AI Pass 交叉销售 → Marketplace 长尾。SKU 拆分提升 ARPU 的同时抬升决策复杂度，需通过更清晰权益包装或试用机制对冲转化损耗。</p>
+
+        <h3>3.5 核心指标</h3>
+        <table>
+          <thead><tr><th>指标</th><th>数值</th><th>备注</th></tr></thead>
+          <tbody>
+            <tr><td>iOS 累计安装</td><td>数千万级</td><td>品类头部 Ink 应用</td></tr>
+            <tr><td>评分密度</td><td>42 万+ 条</td><td>排名与差评率高度相关</td></tr>
+            <tr><td>版本迭代</td><td>7.0.x</td><td>重心：转写稳定性、白板协作、套索交互</td></tr>
+            <tr><td>直接竞品</td><td>Notability 等</td><td>差异化：AI + 学习闭环 + 白板</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="block" id="p1-compare">
+        <h2 class="section-title">4. 对比评估</h2>
+
+        <h3>4.1 核心功能对照</h3>
+        <table>
+          <thead>
+            <tr><th>能力维度</th><th>Notion</th><th>Goodnotes 6</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>内容形态</td><td>结构化块 + 数据库视图</td><td>Ink 笔迹 + PDF 批注 + 白板</td></tr>
+            <tr><td>AI 主战场</td><td>组织知识检索、会议 Agent</td><td>课堂 / 会议转写、学习复习、文档润色</td></tr>
+            <tr><td>协作深度</td><td>权限、发布、团队 Workspace</td><td>链接共编、白板实时协作</td></tr>
+            <tr><td>硬件依赖</td><td>低</td><td>高（Pencil、外接显示）</td></tr>
+            <tr><td>学习闭环</td><td>弱（无内置间隔重复）</td><td>强（Study Sets）</td></tr>
+          </tbody>
+        </table>
+
+        <h3>4.2 定价策略对照</h3>
+        <table>
+          <thead>
+            <tr><th>产品</th><th>策略逻辑</th><th>用户侧感知</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Notion</td>
+              <td>Freemium + 席位扩展；AI 捆绑 Business 拉升 ARPU</td>
+              <td>个人用户：为 AI 支付团队档溢价；团队用户：单工具替代多订阅，TCO 可控</td>
+            </tr>
+            <tr>
+              <td>Goodnotes</td>
+              <td>Essential 获客 + Pro / AI Pass 分层变现 + Marketplace 长尾</td>
+              <td>完整 AI 年度 TCO 不透明；Essential 用户常误判已含 AI 全量能力</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>4.3 产品短板与改进方向</h3>
+        <h4>Notion</h4>
+        <div class="insight insight-user">
+          <h4>用户侧</h4>
+          <p>轻量用户仅需 Meeting AI，却需升级 Business 整席，感知为<strong>功能过载与门槛陡升</strong>，在纪要场景面临垂直工具分流。</p>
+        </div>
+        <div class="insight insight-biz">
+          <h4>经营侧</h4>
+          <p>AI 捆绑高档有利于 ARPU 与席位质量，但削弱个人 PLG 漏斗底部转化。可考虑个人向 AI 轻量包或按量计费，在不稀释 Business 价值前提下回收流失需求。</p>
+        </div>
+
+        <h4>Goodnotes 6</h4>
+        <div class="insight insight-user">
+          <h4>用户侧</h4>
+          <p>Pro 与 AI Pass 边界模糊，购后才发现转写 / 实时摘要受限，引发退款与低分评价，冲击 App Store 排名（学生群体权重高）。</p>
+        </div>
+        <div class="insight insight-biz">
+          <h4>经营侧</h4>
+          <p>多 SKU 提升 ARPU 的前提是<strong>决策成本低于感知价值</strong>。当前摩擦拉低 Trial-to-Paid。改进路径：统一 Pro 叙事（含明确 AI 额度），或通过可控试用（如邀请达标换 Pro 体验）在付费前完成价值验证，降低错购与客服成本。</p>
+        </div>
+      </section>
+
+      <section class="block" id="p1-conclusion">
+        <h2 class="section-title">5. 研究结论</h2>
+        <p>Notion 占据团队知识工作区赛道，以席位 + AI 捆绑驱动 B 端 LTV；Goodnotes 占据 Apple Ink 赛道，以硬件体验与学习闭环驱动 C 端订阅与交叉销售。二者在 AI 笔记场景交叉，但商业模式与短板各异：Notion 瓶颈在<strong>个人侧 AI 可及性</strong>，Goodnotes 瓶颈在<strong>权益可理解性与付费前价值验证</strong>。</p>
+        <p>对 Goodnotes 而言，在维持价格体系前提下，通过社交裂变发放限时 Pro 权益，可针对性缓解 SKU 认知摩擦，并为第二部分增长功能提供依据。</p>
+      </section>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!--                    第二部分 · 产品需求文档                    -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <div class="part-boundary" id="part-two">
+      <p class="part-num">PART II</p>
+      <h2>产品需求文档（PRD）</h2>
+      <p class="part-desc">功能：邀请好友解锁 Pro · 产品：Goodnotes 6</p>
+    </div>
+
+    <div class="major-part">
+      <section class="block" id="p2-req">
+        <h2 class="section-title">1. 需求分析</h2>
+        <div class="doc-meta">
+          <div><strong>产品</strong>Goodnotes 6（iOS / iPadOS / macOS）</div>
+          <div><strong>功能</strong>邀请好友解锁 Pro</div>
+          <div><strong>版本</strong>PRD v1.0</div>
+          <div><strong>优先级</strong>P1</div>
+          <div><strong>目标季度</strong>Q3（开学季战役）</div>
+          <div><strong>OKR</strong>Pro 付费率 +8pp；自然新增 +12%</div>
+        </div>
+
+        <h3>1.1 问题陈述</h3>
+        <p>AI Audio、白板协作、Study Sets 等能力集中于 Pro 及 AI Pass 档位。Free / Essential 用户在付费前难以完整体验 Pro 价值，Trial-to-Paid 受阻。直接降价或延长全局试用将稀释价格锚点。产品以 C 端个人用户为主，缺乏 Notion 式团队自然扩散，需建设<strong>可计量、可风控的 Referral 机制</strong>。</p>
+
+        <h3>1.2 目标用户</h3>
+        <table>
+          <thead><tr><th>角色</th><th>画像</th><th>场景</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>邀请人</td>
+              <td>Free / Essential；有 Pro 需求，价格敏感</td>
+              <td>期末复习需 AI 摘要；小组作业需白板协作</td>
+            </tr>
+            <tr>
+              <td>被邀请人</td>
+              <td>未注册新用户；与邀请人同班 / 同项目组</td>
+              <td>通过链接安装 → 首次创建笔记本</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>1.3 业务目标与指标</h3>
+        <table>
+          <thead><tr><th>类型</th><th>指标</th><th>目标（上线 90 日）</th></tr></thead>
+          <tbody>
+            <tr><td>增长</td><td>活动带来新注册</td><td>≥ 15 万</td></tr>
+            <tr><td>转化</td><td>Pro 试用 → 年费付费率</td><td>≥ 8%（较对照 +3pp）</td></tr>
+            <tr><td>风控</td><td>无效邀请占比</td><td>&lt; 12%</td></tr>
+            <tr><td>体验</td><td>活动相关工单量</td><td>≤ 上季促销周均值</td></tr>
+          </tbody>
+        </table>
+
+        <h3>1.4 需求范围</h3>
+        <p><strong>In Scope：</strong>邀请码 / 链接、分享、落地页、激活判定、7 日 Pro 发放、进度页、两类异常处理、基础风控、埋点。</p>
+        <p><strong>Out of Scope（v1.0）：</strong>被邀请人奖励、多级分销、非 Apple 平台、邀请人数可配置、SSO 联动。</p>
+
+        <h3>1.5 用户故事</h3>
+        <ul>
+          <li>Essential 用户邀请 3 名新用户完成激活，获得 7 日 Pro 全功能，再决策是否购买年费。</li>
+          <li>新用户通过链接进入后，完成注册与首本笔记本创建，流程清晰无断点。</li>
+          <li>运营可配置活动规则、上限，并监控漏斗与作弊率。</li>
+        </ul>
+      </section>
+
+      <section class="block" id="p2-overview">
+        <h2 class="section-title">2. 产品概述</h2>
+
+        <h3>2.1 功能定义</h3>
+        <p>邀请人于端内生成专属链接；每名新用户经链接注册并完成<strong>有效激活</strong>（创建首个笔记本或导入首份 PDF），进度 +1；累计 3 次后，系统发放 <strong>7 日历日 Pro 权益</strong>（含 Pro 档 AI 额度；与现有 IAP 互斥规则见 §3.4）。</p>
+
+        <h3>2.2 价值主张</h3>
+        <ul>
+          <li><strong>用户：</strong>以社交成本置换货币成本，降低 Pro 决策前的体验门槛。</li>
+          <li><strong>业务：</strong>Referral CAC 可控（奖励 ≈ 7 日 Pro 机会成本），获取可验证的新增用户并提升 Pro 价值感知。</li>
+        </ul>
+
+        <h3>2.3 术语</h3>
+        <table>
+          <thead><tr><th>术语</th><th>定义</th></tr></thead>
+          <tbody>
+            <tr><td>Qualified Invite</td><td>新账号 + 新设备指纹 + 完成激活事件</td></tr>
+            <tr><td>激活事件</td><td><code>notebook_created</code> 或 <code>pdf_imported</code> 首次触发</td></tr>
+            <tr><td>Pro Trial</td><td><code>entitlement=pro_trial</code>，T+7 自动回收</td></tr>
+            <tr><td>邀请周期</td><td>自然月；每用户每月最多领奖 1 次</td></tr>
+          </tbody>
+        </table>
+
+        <h3>2.4 入口</h3>
+        <ul>
+          <li>设置 →「邀请好友，体验 Pro」</li>
+          <li>订阅页 Pro 卡片 → 次要 CTA「邀请 3 人试用 7 天」</li>
+          <li>AI 功能受限拦截弹窗 → 引导至活动页</li>
+        </ul>
+      </section>
+
+      <section class="block" id="p2-detail">
+        <h2 class="section-title">3. 功能详细说明</h2>
+
+        <h3>3.1 主流程</h3>
+        <table class="step-table">
+          <thead>
+            <tr><th>步骤</th><th>用户操作</th><th>系统行为</th><th>界面</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>进入活动页，生成邀请</td>
+              <td>写入 <code>referral_invite</code>；生成 <code>invite_code</code>、<code>share_link</code>（Universal Link + UTM）</td>
+              <td class="state">进度 0/3；分享面板</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>分享至微信 / 复制链接等</td>
+              <td>记录 <code>share_channel</code></td>
+              <td class="state">—</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>被邀请人打开链接</td>
+              <td>未安装 → App Store；已安装 → 落地页（inviter 昵称脱敏）</td>
+              <td class="state">落地页 + 注册 CTA</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>注册并同意协议</td>
+              <td>绑定 <code>invite_id</code>；<code>status=pending</code></td>
+              <td class="state">引导创建首本笔记本</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>创建笔记本或导入 PDF</td>
+              <td>激活事件 → <code>status=qualified</code>；通知邀请人 +1</td>
+              <td class="state">邀请人进度更新</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>—</td>
+              <td>第 3 次 qualified → 创建 <code>referral_reward</code>，写入 7 日 Pro</td>
+              <td class="state">到账庆祝页</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>使用 Pro</td>
+              <td>权益与正式 Pro 一致；T-48h / T-24h Push</td>
+              <td class="state">设置页显示剩余天数</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>试用到期</td>
+              <td>回收 entitlement；笔记数据保留</td>
+              <td class="state">订阅页续费 CTA</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="flow-block">Inviter: 活动页 → Share
+→ Invitee: Landing → Register → Activate (qualified)
+→ System: +1 ×3 → Grant pro_trial_7d
+→ Inviter: Pro (7d) → Expire → Paywall</div>
+
+        <h3>3.2 页面规格</h3>
+        <h4>活动主页</h4>
+        <ul>
+          <li>规则摘要：3 人 / 7 天 / 每月 1 次 / 仅新用户。</li>
+          <li>环形进度 0–3；邀请记录（脱敏头像；状态：进行中 / 已生效 / 未生效）。</li>
+          <li>主 CTA「邀请好友」；次 CTA「Pro 权益说明」。</li>
+        </ul>
+        <h4>被邀请人落地页</h4>
+        <ul>
+          <li>Inviter 昵称 + 场景文案；注册后 Onboarding：选模板 → 创建笔记本 → 可选 iCloud。</li>
+        </ul>
+
+        <h3>3.3 异常分支 A：邀请无效（风控）</h3>
+        <p><strong>触发条件（任一）：</strong></p>
+        <ul>
+          <li><code>apple_sub</code> / email 已存在历史账号；</li>
+          <li><code>device_fingerprint</code> 与邀请人相同，或 90 日内曾为其他 qualified 设备；</li>
+          <li>同 IP 24h 内受邀注册 &gt; N（默认 5）；</li>
+          <li>注册至激活 &lt; 30s。</li>
+        </ul>
+        <p><strong>处理：</strong><code>status=invalid</code>，写入 <code>invalid_reason</code>；进度不增加；列表展示可读原因；邀请人单日 invalid ≥ 5 则冻结发码 24h（<code>inviter_frozen_until</code>）。被邀请人账户不受影响。</p>
+        <p><strong>文案：</strong>「该好友不符合新用户规则，本次未计入进度。」</p>
+        <p><strong>埋点：</strong><code>referral_invalid</code>（<code>reason_code</code>）。</p>
+
+        <h3>3.4 异常分支 B：奖励无法发放或降级</h3>
+        <table>
+          <thead><tr><th>条件</th><th>处理</th><th>提示</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>已有有效 Pro IAP</td>
+              <td><code>fallback_reward_type=ai_pass_3d</code> 或 Marketplace 积分</td>
+              <td>「已为 Pro 会员，已延长 AI Pass 3 天」</td>
+            </tr>
+            <tr>
+              <td>本月已领奖</td>
+              <td>进度可展示，奖励顺延至次月 1 日 UTC 或提示下月参与</td>
+              <td>「本月奖励已领取」</td>
+            </tr>
+            <tr>
+              <td>权益写入失败</td>
+              <td><code>grant_status=pending</code>；重试 3 次（5 / 15 / 60 min）</td>
+              <td>「奖励发放中，约 10 分钟内到账」</td>
+            </tr>
+            <tr>
+              <td>账号封禁 / 退款争议</td>
+              <td>拒绝发放，转客服</td>
+              <td>「账户异常，请联系支持并提供邀请码」</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>3.5 数据字段</h3>
+        <table>
+          <thead><tr><th>实体</th><th>字段</th><th>类型</th><th>必填</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td rowspan="7"><code>referral_campaign</code></td><td>campaign_id</td><td>string</td><td>Y</td><td>活动 ID</td></tr>
+            <tr><td>required_invites</td><td>int</td><td>Y</td><td>默认 3</td></tr>
+            <tr><td>reward_days</td><td>int</td><td>Y</td><td>默认 7</td></tr>
+            <tr><td>max_rewards_per_user_per_month</td><td>int</td><td>Y</td><td>默认 1</td></tr>
+            <tr><td>ip_daily_limit</td><td>int</td><td>Y</td><td>默认 5</td></tr>
+            <tr><td>start_at / end_at</td><td>datetime</td><td>Y</td><td>活动窗口</td></tr>
+            <tr><td>fallback_reward_type</td><td>enum</td><td>N</td><td>ai_pass_3d / marketplace_credit</td></tr>
+
+            <tr><td rowspan="6"><code>referral_invite</code></td><td>invite_id</td><td>uuid</td><td>Y</td><td>PK</td></tr>
+            <tr><td>inviter_user_id</td><td>string</td><td>Y</td><td>—</td></tr>
+            <tr><td>invite_code</td><td>string</td><td>Y</td><td>6–8 位</td></tr>
+            <tr><td>share_link</td><td>string</td><td>Y</td><td>含 deep link</td></tr>
+            <tr><td>share_channel</td><td>enum</td><td>N</td><td>wechat / copy / other</td></tr>
+            <tr><td>created_at</td><td>datetime</td><td>Y</td><td>—</td></tr>
+
+            <tr><td rowspan="8"><code>referral_invitee</code></td><td>invitee_id</td><td>uuid</td><td>Y</td><td>PK</td></tr>
+            <tr><td>invite_id</td><td>uuid</td><td>Y</td><td>FK</td></tr>
+            <tr><td>invitee_user_id</td><td>string</td><td>N</td><td>注册后写入</td></tr>
+            <tr><td>status</td><td>enum</td><td>Y</td><td>pending / qualified / invalid</td></tr>
+            <tr><td>invalid_reason</td><td>enum</td><td>N</td><td>duplicate_user / same_device / ip_limit / fast_activate</td></tr>
+            <tr><td>qualified_at</td><td>datetime</td><td>N</td><td>—</td></tr>
+            <tr><td>device_fingerprint</td><td>string</td><td>Y</td><td>风控</td></tr>
+            <tr><td>registered_at</td><td>datetime</td><td>Y</td><td>—</td></tr>
+
+            <tr><td rowspan="7"><code>referral_reward</code></td><td>reward_id</td><td>uuid</td><td>Y</td><td>PK</td></tr>
+            <tr><td>inviter_user_id</td><td>string</td><td>Y</td><td>—</td></tr>
+            <tr><td>reward_type</td><td>enum</td><td>Y</td><td>pro_trial_7d / ai_pass_3d</td></tr>
+            <tr><td>pro_trial_expires_at</td><td>datetime</td><td>N</td><td>—</td></tr>
+            <tr><td>grant_status</td><td>enum</td><td>Y</td><td>pending / granted / failed</td></tr>
+            <tr><td>granted_at</td><td>datetime</td><td>N</td><td>—</td></tr>
+            <tr><td>retry_count</td><td>int</td><td>Y</td><td>默认 0</td></tr>
+
+            <tr><td><code>user_entitlement</code></td><td>entitlement_type, expires_at, source</td><td>—</td><td>Y</td><td>source=referral_campaign</td></tr>
+            <tr><td><code>user_subscription</code></td><td>iap_product_id, expires_at, is_active</td><td>—</td><td>N</td><td>Pro 冲突判定</td></tr>
+          </tbody>
+        </table>
+
+        <h3>3.6 埋点</h3>
+        <table>
+          <thead><tr><th>事件</th><th>时机</th><th>属性</th></tr></thead>
+          <tbody>
+            <tr><td>referral_page_view</td><td>活动页曝光</td><td>user_tier</td></tr>
+            <tr><td>referral_share</td><td>分享</td><td>channel, invite_id</td></tr>
+            <tr><td>referral_landing_view</td><td>落地页</td><td>invite_id, is_new_install</td></tr>
+            <tr><td>referral_qualified</td><td>有效邀请</td><td>inviter_id, time_to_activate</td></tr>
+            <tr><td>referral_reward_granted</td><td>到账</td><td>reward_type, grant_latency_ms</td></tr>
+            <tr><td>referral_pro_convert</td><td>试用后付费</td><td>days_since_trial_end</td></tr>
+          </tbody>
+        </table>
+
+        <h3>3.7 非功能需求</h3>
+        <ul>
+          <li>进度更新端到端 &lt; 3s（qualified 后 Push + 刷新）。</li>
+          <li>邀请码防枚举；接口 60 req/min/user。</li>
+          <li>符合 App Store 促销与隐私审核；展示隐私政策链接。</li>
+          <li>首发语言：简中、英、日、韩。</li>
+        </ul>
+
+        <h3>3.8 版本规划</h3>
+        <table>
+          <thead><tr><th>版本</th><th>范围</th><th>节点</th></tr></thead>
+          <tbody>
+            <tr><td>v1.0</td><td>主流程 + 双异常 + 风控 + 埋点</td><td>T0 + 6 周</td></tr>
+            <tr><td>v1.1</td><td>被邀请人奖励；邀请人数 A/B（2 vs 3）</td><td>T0 + 10 周</td></tr>
+            <tr><td>v2.0</td><td>区域化活动；开学季 IAP 联动</td><td>下一开学季前</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <footer>
+      <p>GN-CR-2026-01 · 竞品调研与 PRD v1.1</p>
+      <p class="footnote">市场与财务数据取自公开披露；上线前须经法务、财务及 App Store 政策复核。</p>
+    </footer>
+  </div>
+
+
+</body></html>
